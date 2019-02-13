@@ -2,6 +2,6 @@ Tutorials
 =========
 .. toctree::
     
-    standard-script-structure
+    crash-course-basics
     removing-loot
     adding-loot-basic

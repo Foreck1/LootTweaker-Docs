@@ -1,2 +1,0 @@
-Standard Script Structure
-=========================
