@@ -39,16 +39,18 @@ instance method
 
 | An example of a static method is the method ``getTable`` of the class ``loottweaker.vanilla.loot.LootTables``.
 | Calling it looks something like this ``loottweaker.vanilla.loot.LootTables.getTable("minecraft:entities/pig")``.
+| Common notation for a static method is ``class_name.method_name()``, e.g. ``LootTables.getTable()``. Parameters are not included in the notation.
 
 | An example of an instance method is the method ``getPool`` of the class ``loottweaker.vanilla.loot.LootTable``.
 | Calling it looks something like this ``pigTable.getPool("main")``, where ``pigTable`` is an instance of ``loottweaker.vanilla.loot.LootTable``. 
+| Common notation for a static method is ``class_name#method_name()``, e.g. ``LootTable#getPool()``. Parameters are not included in the notation.
 
 Crash Course in Local Variables
 -------------------------------
-| ZenScript allows you to store a particular piece of data for later under a particular name.
-| This is done using the **var** & **val** keywords, 
-| the difference is that **var** allows you to change the piece of data the name refers to, while **val** does not.
-| They allow you to replace this::
+ZenScript allows you to store a particular piece of data for later under a particular name.
+This is done using the **var** & **val** keywords, 
+the difference is that **var** allows you to change the piece of data the name refers to, while **val** does not.
+They allow you to replace this::
 
     LootTables.getTable("foo").getPool("bar").removeEntry("baz");
     LootTables.getTable("foo").getPool("bar").removeEntry("qux");
@@ -59,8 +61,8 @@ with this::
     fooBar.removeEntry("baz");
     fooBar.removeEntry("qux");
 
-Much easier to read isn't it? Note that they store the value returned by the call on the right side of the =.
-They do not execute that code when referenced.
+Much easier to read isn't it? Note that they store the value returned by the call on the right side of the =, 
+they do not execute that code when referenced. More information about `local variables <http://crafttweaker.readthedocs.io/en/latest/#Vanilla/Variable_Types/Variable_Types/>`_.
 
 Explanation of an Example Snippet
 ---------------------------------
