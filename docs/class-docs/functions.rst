@@ -56,8 +56,8 @@ Methods
     :outertype: Functions
     
     Parses a `DataMap <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/>`_ as if it were the JSON form of a ``LootFunction``.
-    It is reco
+    It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
     :return: ``json`` as a LootFunction.
     :errors: if ``json`` is not a ``DataMap``.
 
-*set_attributes* does not have a helper method as it is too complex
+``minecraft:set_attributes`` does not have a helper method as it is too complex.

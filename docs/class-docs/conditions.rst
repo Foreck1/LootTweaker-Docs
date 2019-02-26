@@ -3,33 +3,40 @@ Conditions
 JSON can be verbose and difficult to write. This class can help.
 It provides methods for creating simple loot conditions, but if you wish to use complex loot conditions you still have to write them in JSON.
 
+All methods on this page, except ``parse()`` create a vanilla loot condition, so their parameters are equivalent to the parameters of the equivalent loot condition.
+All vanilla loot conditions are listed and documented `here <https://minecraft.gamepedia.com/Loot_table#Conditions>`_.
+
 The corresponding class for loot functions is :doc:`functions`.
 
 Methods
 -------
 
 .. java:method:: LootCondition randomChance(float chance)
+    :outertype: Conditions
 
-    :param chance: a percentage chance in decimal form
-    :return: a *random_chance* condition with the specified chance.
+    :equivalent to: ``minecraft:random_chance``
 
 .. java:method:: LootCondition randomChanceWithLooting(float chance, float lootingMult)
+    :outertype: Conditions
 
-    :param chance: a percentage chance in decimal form
-    :param lootingMult: a percentage chance in decimal form
-    :return: a *random_chance_with_looting* condition with the specified chance and looting multiplier
+    :equivalent to: ``minecraft:random_chance_with_looting``
 
 .. java:method:: LootCondition killedByPlayer()
+    :outertype: Conditions
 
-    :return: a *killed_by_player* condition that is true if the entity was killed by a player
+    :equivalent to: ``minecraft:killed_by_player``
 
 .. java:method:: LootCondition killedByNonPlayer()
+    :outertype: Conditions
 
-    :return: a *killed_by_player* condition that is true if the entity was killed by a non-player
+    :equivalent to: ``minecraft:killed_by_player`` with the ``inverse`` tag set to true
 
 .. java:method:: LootCondition parse(IData json)
+    :outertype: Conditions
 
-    :param json: Valid JSON for a LootCondition
-    :return: the passed JSON as a LootCondition.
+    Parses a `DataMap <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/>`_ as if it were the JSON form of a ``LootCondition``.
+    It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
+    :return: ``json`` as a LootCondition
+    :errors: if ``json`` is not a ``DataMap``
 
-*entity_properties* and *entity_scores* do not have helper methods as they are too complex.
+``minecraft:entity_properties`` and ``minecraft:entity_scores`` do not have helper methods as they are too complex.
