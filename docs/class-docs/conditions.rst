@@ -1,5 +1,8 @@
 Conditions
 ==========
+
+:full name: ``loottweaker.vanilla.loot.Conditions``
+
 JSON can be verbose and difficult to write. This class can help.
 It provides methods for creating simple loot conditions, but if you wish to use complex loot conditions you still have to write them in JSON.
 
