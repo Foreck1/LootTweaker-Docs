@@ -3,7 +3,10 @@ LootTweaker Docs
 ================
 
 | Welcome to the LootTweaker Docs!  
-| They are currently under construction, thank you for your patience.
+| All essential documentation is available. Improvements are still being made.
+| Report issues with this documentation or make suggestions for it `here <https://github.com/Daomephsta/LootTweaker-Docs/issues>`__.
+| The above link is only for issues and suggestions with the docs, if you require help using LootTweaker, see below.
+| If you have found an issue with LootTweaker itself, its issue tracker is located `here <https://github.com/Daomephsta/LootTweaker/issues>`__
 
 Discord
 =======
