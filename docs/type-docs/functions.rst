@@ -14,50 +14,50 @@ The corresponding type for loot conditions is :doc:`conditions`.
 Methods
 -------
 
-See :doc:`here <method-documentation-format>` for an explanation of the method documentation format used on this page.
+See :doc:`here <method-documentation-format>` for an explanation of the method documentation format used on this page.static 
 
-.. java:method :: LootFunction enchantRandomly(String[] enchantIDList)
+.. java:method :: static LootFunction enchantRandomly(String[] enchantIDList)
     :outertype: Functions
     
     :equivalent to: ``minecraft:enchant_randomly``
     :errors: if any enchantment ID does not resolve to an enchantment
 
-.. java:method :: LootFunction enchantWithLevels(int min, int max, boolean isTreasure)
+.. java:method :: static LootFunction enchantWithLevels(int min, int max, boolean isTreasure)
     :outertype: Functions
     
     :equivalent to: ``minecraft:enchant_with_levels``
 
-.. java:method :: LootFunction lootingEnchantBonus(int min, int max, int limit)
+.. java:method :: static LootFunction lootingEnchantBonus(int min, int max, int limit)
     :outertype: Functions
     
     :equivalent to: ``minecraft:looting_enchant``
 
-.. java:method :: LootFunction setCount(int min, int max)
+.. java:method :: static LootFunction setCount(int min, int max)
 
     :equivalent to: ``minecraft:set_count``
 
-.. java:method :: LootFunction setDamage(float min, float max)
+.. java:method :: static LootFunction setDamage(float min, float max)
     :outertype: Functions
     
     :equivalent to: ``minecraft:set_damage``
     :errors: if ``max`` is greater than 1.0
 
-.. java:method :: LootFunction setMetadata(int min, int max)
+.. java:method :: static LootFunction setMetadata(int min, int max)
     :outertype: Functions
     
     :equivalent to: ``minecraft:set_data``
 
-.. java:method :: LootFunction setNBT(DataMap nbtAsJson)
+.. java:method :: static LootFunction setNBT(DataMap nbtAsJson)
     :outertype: Functions
     
     :equivalent to: ``minecraft:set_nbt``
 
-.. java:method :: LootFunction smelt()
+.. java:method :: static LootFunction smelt()
     :outertype: Functions
     
     :equivalent to: ``minecraft:furnace_smelt``
 
-.. java:method :: LootFunction parse(DataMap json)
+.. java:method :: static LootFunction parse(DataMap json)
     :outertype: Functions
     
     Parses a `DataMap <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/>`_ into a ``LootFunction``.

@@ -16,27 +16,27 @@ Methods
 
 See :doc:`here <method-documentation-format>` for an explanation of the method documentation format used on this page.
 
-.. java:method:: LootCondition randomChance(float chance)
+.. java:method:: static LootCondition randomChance(float chance)
     :outertype: Conditions
 
     :equivalent to: ``minecraft:random_chance``
 
-.. java:method:: LootCondition randomChanceWithLooting(float chance, float lootingMult)
+.. java:method:: static LootCondition randomChanceWithLooting(float chance, float lootingMult)
     :outertype: Conditions
 
     :equivalent to: ``minecraft:random_chance_with_looting``
 
-.. java:method:: LootCondition killedByPlayer()
+.. java:method:: static LootCondition killedByPlayer()
     :outertype: Conditions
 
     :equivalent to: ``minecraft:killed_by_player``
 
-.. java:method:: LootCondition killedByNonPlayer()
+.. java:method:: static LootCondition killedByNonPlayer()
     :outertype: Conditions
 
     :equivalent to: ``minecraft:killed_by_player`` with the ``inverse`` tag set to true
 
-.. java:method:: LootCondition parse(DataMap json)
+.. java:method:: static LootCondition parse(DataMap json)
     :outertype: Conditions
 
     Parses a `DataMap <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/>`_ into a ``LootCondition``.
