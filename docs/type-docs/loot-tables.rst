@@ -6,6 +6,8 @@ LootTables
 Methods
 -------
 
+See :doc:`here <method-documentation-format>` for an explanation of the method documentation format used on this page.
+
 .. java:method:: static LootTable getTable(String tableName)
     :outertype: LootTables
 

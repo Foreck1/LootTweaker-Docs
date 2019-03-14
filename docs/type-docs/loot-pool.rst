@@ -3,12 +3,12 @@ LootPool
 
 :full name: ``loottweaker.vanilla.loot.LootPool``
 
-Each instance of this class represents a specific pool of a loot table.
+Each instance of this type represents a specific pool of a loot table.
 
 Condition and function formatting
 ---------------------------------
 Conditions and functions should be supplied to methods as arrays of `DataMaps <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/>`_ 
-or [helper class methods](). Do not supply the conditions as part of a parent tag. 
+or [helper type methods](). Do not supply the conditions as part of a parent tag. 
 When using `DataMap <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/>`_ to supply conditions or functions, 
 it is recommended that you surround the keys with double quotes("), as otherwise any keys which are zenscript keywords(e.g function) will cause issues.
 
@@ -41,7 +41,9 @@ Not Recommended::
 Methods
 -------
 
-.. java:method:: void addConditionsJson(IData[] conditions)
+See :doc:`here <method-documentation-format>` for an explanation of the method documentation format used on this page.
+
+.. java:method:: void addConditionsJson(DataMap[] conditions)
     :outertype: LootPool
 
     Adds conditions to the pool. 
@@ -63,7 +65,7 @@ Methods
 
     :param entryName: The unique name of the target entry
 
-.. java:method:: void addItemEntryJson(IItemStack iStack, int weight, int quality, IData[] functions, IData[] conditions, @Optional String name)
+.. java:method:: void addItemEntryJson(IItemStack iStack, int weight, int quality, DataMap[] functions, DataMap[] conditions, @Optional String name)
     :outertype: LootPool
 
     Adds a new ``item`` type entry to the pool.
@@ -105,7 +107,7 @@ Methods
     :param weight: the main component that determines the generation chance. Higher weights make entries generate more often.
     :param name: (Optional) a name for the entry. Must be unique within the pool.
 
-.. java:method:: void addLootTableEntryJson(String tableName, int weightIn, int qualityIn, IData[] conditions, @Optional String name)
+.. java:method:: void addLootTableEntryJson(String tableName, int weightIn, int qualityIn, DataMap[] conditions, @Optional String name)
     :outertype: LootPool
 
     Adds a new ``loot_table`` type entry to the pool.
@@ -159,7 +161,7 @@ Methods
     :param conditions: an array of instances of `DataMap <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/>`_, each a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
     :param name: (Optional) a name for the entry. Must be unique within the pool.
 
-.. java:method:: void addEmptyEntryJson(int weight, int quality, IData[] conditions, @Optional String name)
+.. java:method:: void addEmptyEntryJson(int weight, int quality, DataMap[] conditions, @Optional String name)
     :outertype: LootPool
 
     Adds a new ``empty`` type entry to the pool.

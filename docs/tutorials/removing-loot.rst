@@ -102,7 +102,7 @@ Then combine ``LootTables.getTable()``, ``LootTable#getPool()`` & ``LootPool#rem
 with the table, pool and entry names you found earlier.
 The resulting script for removing porkchops from the pig loot table looks like this::
 
-    //Import necessary classes
+    //Import necessary types
     import loottweaker.vanilla.loot.LootTables;  
     import loottweaker.vanilla.loot.LootTable;  
     import loottweaker.vanilla.loot.LootPool;

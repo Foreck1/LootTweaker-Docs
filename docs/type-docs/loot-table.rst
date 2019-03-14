@@ -5,6 +5,9 @@ LootTable
 
 Methods
 -------
+
+See :doc:`here <method-documentation-format>` for an explanation of the method documentation format used on this page.
+
 .. java:method:: void clear()
     :outertype: LootTable
 

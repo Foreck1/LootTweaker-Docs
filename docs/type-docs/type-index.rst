@@ -1,4 +1,4 @@
-ZenScript Classes
+ZenScript Types
 =================
 
 .. toctree::

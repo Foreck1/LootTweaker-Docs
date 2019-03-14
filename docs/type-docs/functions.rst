@@ -3,16 +3,18 @@ Functions
 
 :full name: ``loottweaker.vanilla.loot.Conditions``
 
-JSON can be verbose and difficult to write. This class can help.
+JSON can be verbose and difficult to write. This type can help.
 It provides methods for creating simple loot functions, but if you wish to use complex loot functions you still have to write them in JSON.
 
 All methods on this page, except ``parse()`` create a vanilla loot function, so their parameters are equivalent to the parameters of the equivalent loot function.
 All vanilla loot functions are listed and documented `here <https://minecraft.gamepedia.com/Loot_table#Functions>`_.
 
-The corresponding class for loot conditions is :doc:`conditions`.
+The corresponding type for loot conditions is :doc:`conditions`.
 
 Methods
 -------
+
+See :doc:`here <method-documentation-format>` for an explanation of the method documentation format used on this page.
 
 .. java:method :: LootFunction enchantRandomly(String[] enchantIDList)
     :outertype: Functions
@@ -45,7 +47,7 @@ Methods
     
     :equivalent to: ``minecraft:set_data``
 
-.. java:method :: LootFunction setNBT(IData nbtAsJson)
+.. java:method :: LootFunction setNBT(DataMap nbtAsJson)
     :outertype: Functions
     
     :equivalent to: ``minecraft:set_nbt``
@@ -55,7 +57,7 @@ Methods
     
     :equivalent to: ``minecraft:furnace_smelt``
 
-.. java:method :: LootFunction parse(IData json)
+.. java:method :: LootFunction parse(DataMap json)
     :outertype: Functions
     
     Parses a `DataMap <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/>`_ into a ``LootFunction``.

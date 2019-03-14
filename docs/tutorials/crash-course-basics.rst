@@ -9,14 +9,14 @@ Crash Course in Object Oriented Programming
 | ZenScript (The language all MineTweaker/CraftTweaker scripts are written in) supports a particular way of programming called Object Oriented Programming (OOP).
 | The following OOP terms are used in this documentation
 
-class
+type
     a definition of a particular kind of thing and how it behaves. 
 
 instance
-    a representation of particular kind of thing. Created from a class.
+    a representation of particular kind of thing. Created from a type.
 
-As an example, consider the class ``loottweaker.vanilla.loot.LootPool``, which represents a loot pool. 
-There is only one class called ``loottweaker.vanilla.loot.LootPool``, but there are many instances of it, 
+As an example, consider the type ``loottweaker.vanilla.loot.LootPool``, which represents a loot pool. 
+There is only one type called ``loottweaker.vanilla.loot.LootPool``, but there are many instances of it, 
 one for each loot pool.
 
 method
@@ -32,18 +32,18 @@ return
     a method is said to 'return' when it stops running its code. Some methods output an instance when they return.
 
 static method
-    a method that can be used *without* an instance of the class it is defined by.
+    a method that can be used *without* an instance of the type it is defined by.
 
 instance method
-    a method or field that can only be used *with* an instance of the class it is defined by.
+    a method or field that can only be used *with* an instance of the type it is defined by.
 
-| An example of a static method is the method ``getTable`` of the class ``loottweaker.vanilla.loot.LootTables``.
+| An example of a static method is the method ``getTable`` of the type ``loottweaker.vanilla.loot.LootTables``.
 | Calling it looks something like this ``loottweaker.vanilla.loot.LootTables.getTable("minecraft:entities/pig")``.
-| Common notation for a static method is ``class_name.method_name()``, e.g. ``LootTables.getTable()``. Parameters are not included in the notation.
+| Common notation for a static method is ``type_name.method_name()``, e.g. ``LootTables.getTable()``. Parameters are not included in the notation.
 
-| An example of an instance method is the method ``getPool`` of the class ``loottweaker.vanilla.loot.LootTable``.
+| An example of an instance method is the method ``getPool`` of the type ``loottweaker.vanilla.loot.LootTable``.
 | Calling it looks something like this ``pigTable.getPool("main")``, where ``pigTable`` is an instance of ``loottweaker.vanilla.loot.LootTable``. 
-| Common notation for a static method is ``class_name#method_name()``, e.g. ``LootTable#getPool()``. Parameters are not included in the notation.
+| Common notation for a static method is ``type_name#method_name()``, e.g. ``LootTable#getPool()``. Parameters are not included in the notation.
 
 Crash Course in Local Variables
 -------------------------------

@@ -17,7 +17,7 @@ If you're new to LootTweaker, go to :doc:`Getting Started<getting-started>`.
    
    getting-started
    tutorials/tutorial-index
-   class-docs/class-index
+   type-docs/type-index
    reference/reference-index
    tips-and-tricks
    troubleshooting
