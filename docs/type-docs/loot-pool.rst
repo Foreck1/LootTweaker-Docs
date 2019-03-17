@@ -101,7 +101,7 @@ See :doc:`here <method-documentation-format>` for an explanation of the method d
 .. java:method:: void addItemEntry(IItemStack stack, int weightIn, @Optional String name)
     :outertype: LootPool
 
-    Adds a new ``item`` type entry to the pool, with no conditions or functions, and a quality of 1.
+    Adds a new ``item`` type entry to the pool, with no conditions or functions, and a quality of 0.
 
     :param iStack: the item stack the entry should produce. LootTweaker will autogenerate *set_nbt*, *set_damage*/*set_data* and *set_count* functions based on this stack, unless ``functions`` contains a function of the same type. 
     :param weight: the main component that determines the generation chance. Higher weights make entries generate more often.
@@ -143,7 +143,7 @@ See :doc:`here <method-documentation-format>` for an explanation of the method d
 .. java:method:: void addLootTableEntry(String tableName, int weightIn, @Optional String name)
     :outertype: LootPool
 
-    Adds a new ``loot_table`` type entry to the pool with no conditions, and a quality of 1.
+    Adds a new ``loot_table`` type entry to the pool with no conditions, and a quality of 0.
 
     :param tableName: the identifier for the table the entry should generate loot from.
     :param weight: the main component that determines the generation chance. Higher weights make entries generate more often.
@@ -183,7 +183,7 @@ See :doc:`here <method-documentation-format>` for an explanation of the method d
 .. java:method:: void addEmptyEntry(int weight, @Optional String name)
     :outertype: LootPool
 
-    Adds a new ``empty`` type entry to the pool with no conditions, and a quality of 1.
+    Adds a new ``empty`` type entry to the pool with no conditions, and a quality of 0.
 
     :param weight: the main component that determines the generation chance. Higher weights make entries generate more often.
     :param quality: determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
