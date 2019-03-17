@@ -17,7 +17,17 @@ See :doc:`here <method-documentation-format>` for an explanation of the method d
     :errors: if no registered table exists with the specified name.
     :return: the table with the specified name.
 
+.. java:method:: static LootTable getTableUnchecked(String tableName)
+    :outertype: LootTables
+
+    Gets a loot table by name, without checking if it is registered with the registry of built-in loot tables.
+    This is intended for modifying :doc:`inject tables </tutorials/modifying-inject-tables>`. Its use for any
+    other purpose is not supported.
+
+    :param tableName: the unique name of the table.
+    :return: the table with the specified name.
+
 Registered Tables
 -----------------
 ``getTable()`` only works for tables that exist and are registered with vanilla's registry. Most mods register their tables, but some do not. 
-Most loot tables should be registered, but some should not, a feature is in the works to allow LootTweaker scripts to modify unregistered tables.
+Most loot tables should be registered, but some should not. See :doc:`this tutorial </tutorials/modifying-inject-tables>` for a complete explanation. 
