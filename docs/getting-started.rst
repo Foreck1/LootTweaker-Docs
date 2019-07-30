@@ -1,6 +1,9 @@
 Getting Started
 ===============
-The basics of LootTweaker are more complicated than the basics of CraftTweaker, and most other CraftTweaker addons. This is unavoidable, designing LootTweaker to be used more like most CraftTweaker addons would have made it very verbose and rather ugly. Additionally Minecraft's loot system is complicated. I have tried to minimise the knowledge required to use the basics, but you will have to learn a few new concepts if you haven't gone beyond the basics of CraftTweaker before.  
+The basics of LootTweaker are more complicated than the basics of CraftTweaker, and most other CraftTweaker addons.
+This is unavoidable, designing LootTweaker to be used more like most CraftTweaker addons would have made it very verbose and rather ugly.
+Additionally Minecraft's loot system is complicated. I have tried to minimise the knowledge required to use the basics,
+but you will have to learn a few new concepts if you haven't gone beyond the basics of CraftTweaker before.
 All of the required concepts are covered either in the resources linked in the Essential Reading section, or in the :doc:`Tutorials<tutorials/tutorial-index>`.
 
 Assumed Knowledge
@@ -9,7 +12,6 @@ These docs will assume that you:
 
 * Are familiar with the basics of ZenScript (The language used for CraftTweaker scripts).
 * Understand what tables, pools, entries, conditions, and functions are in the context of Minecraft's loot system. A complete in-depth understanding is not expected.
-
 
 Essential Reading
 -----------------
@@ -20,3 +22,12 @@ Other Useful Resources
 ----------------------
 * `More on Variables <http://minetweaker3.powerofbytes.com/wiki/Tutorial:Basic_Recipes#Using_variables>`_
 * :doc:`Various useful LootTweaker tips and tricks<tips-and-tricks>`
+
+Video Tutorials
+---------------
+If text tutorials aren't your thing, there are 3rd party video tutorials around.
+Below I've listed some I've watched and judged to be of good quality.
+They don't necessarily cover everything however.
+
+| `How to make a Minecraft Modpack | Adding and Removing Loot from Entities(mobs) <https://youtu.be/Gam65KJ4RDM>`_ by IterationFunk
+| This video also covers CraftTweaker's drop functions, LootTweaker content starts at `7:59 <https://youtu.be/Gam65KJ4RDM?t=479>`_.
