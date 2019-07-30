@@ -10,7 +10,7 @@ LootTweaker Docs
 
 Discord
 =======
-You can get help with LootTweaker in the #loottweaker channel on `Daomephsta's Discord server <https://discord.gg/Gut3sdX/>`_
+You can get help with LootTweaker in the #loottweaker channel on `Daomephsta's Discord server <https://discord.gg/6DUqXDf/>`_
 
 If you're new to LootTweaker, go to :doc:`Getting Started<getting-started>`.
 
