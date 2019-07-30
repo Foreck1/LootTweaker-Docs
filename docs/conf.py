@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # -- Project information -----------------------------------------------------
 project = 'LootTweaker'
-copyright = '2018, Daomephsta'
+copyright = '2018-2019, Daomephsta'
 author = 'Daomephsta'
 
 # The short X.Y version
