@@ -22,8 +22,9 @@ Where an ? means the element is not included in all examples.
 
 Explanation
 -----------
-| The format has modifiers, then the return type, the method name, and the arguments in parentheses. 
-| The only valid modifier is ``static``, which means the method is a :doc:`static method </tutorials/crash-course-basics>`. No modifiers means the method is an instance method. 
+| The format has modifiers, then the return type, the method name, and the arguments in parentheses.
+| The only valid modifier is ``static``, which means the method is a :doc:`static method </tutorials/crash-course-basics>`.
+  No modifiers means the method is an instance method.
 | The return type is either the name of a ZenScript type, which means the method returns an instance of that type; or it is the keyword ``void``, which means the method returns nothing.
 | The name is a valid ZenScript variable name.
 | A method has zero or more parameters, which are enclosed in parentheses and separated by comments.
@@ -33,24 +34,24 @@ Explanation
 Common Types
 --------------
 ========== =================================================================================================== ============================================================================
-Type Name  Description                                  Examples                                                                   
+Type Name  Description                                  Examples
 ========== =================================================================================================== ============================================================================
-IItemStack An item stack with metadata, size & NBT data.                                                       | ``<minecraft:apple>``                                                     
-           `More info <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Items/IItemStack/#iitemstack>`__ | ``<minecraft:potato> * 3``                                               
-                                                                                                               | ``<minecraft:dye:3>``                                                     
+IItemStack An item stack with metadata, size & NBT data.                                                       | ``<minecraft:apple>``
+           `More info <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Items/IItemStack/#iitemstack>`_  | ``<minecraft:potato> * 3``
+                                                                                                               | ``<minecraft:dye:3>``
 
 DataMap    A representation of map-like formats,                                                               | ``{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 3.0}}``
            such as JSON and NBT.                                                                               | ``{"condition": "killed_by_player"}``
-           `More info <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/#datamap>`__ 
- 
-String     A sequence of characters.                                                                           | ``"Alice"``                                                               
+           `More info <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/#datamap>`_
+
+String     A sequence of characters.                                                                           | ``"Alice"``
                                                                                                                | ``"cat@example.com"``
                                                                                                                | ``"123ABCxyz789"``
 
-int        A whole number from -|2^31| to |2^31| - 1.                                                          | ``1``                                                                     
+int        A whole number from -|2^31| to |2^31| - 1.                                                          | ``1``
                                                                                                                | ``-52``
- 
-float      A floating point number from -|2^31| to |2^31| - 1.                                                 | ``3.141``                                                                 
+
+float      A floating point number from -|2^31| to |2^31| - 1.                                                 | ``3.141``
                                                                                                                | ``-2.05``
 ========== =================================================================================================== ============================================================================
 
@@ -66,7 +67,7 @@ More info `here <https://crafttweaker.readthedocs.io/en/latest/#AdvancedFunction
 
 Optional arguments
 ------------------
-If an argument has @Optional before it (e.g @Optional String name), it's optional. If you do not specify a value, LootTweaker will generate one. 
+If an argument has @Optional before it (e.g @Optional String name), it's optional. If you do not specify a value, LootTweaker will generate one.
 For example, ``LootPool#addItemEntry(IItemStack stack, int weightIn, @Optional String name)`` can be called in 2 ways::
 
     pool.addItemEntry(<minecraft:apple>, 5, "not_an_orange");

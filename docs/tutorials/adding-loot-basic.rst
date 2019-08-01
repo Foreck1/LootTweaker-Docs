@@ -5,11 +5,11 @@ In this tutorial you will learn the basics of adding loot to a loot table. This 
 
 A basic overview of loot generation
 -----------------------------------
-To generate loot from a loot table, each pool in the table is asked to generate loot. 
-Each pool then checks that all the conditions attached to it output true. If they do, 
-it calculates a number **t** based on the `rolls` & `bonus_rolls` parameters of that pool and the player's luck. 
-The pool then generates a list of all the entries it contains with conditions that all output true. 
-**t** entries are picked from this list and their loot generated, which entries are picked is 
+To generate loot from a loot table, each pool in the table is asked to generate loot.
+Each pool then checks that all the conditions attached to it output true. If they do,
+it calculates a number **t** based on the `rolls` & `bonus_rolls` parameters of that pool and the player's luck.
+The pool then generates a list of all the entries it contains with conditions that all output true.
+**t** entries are picked from this list and their loot generated, which entries are picked is
 influenced by the `weight` & `quality` parameters of each entry and the player's luck.
 
 Weight, quality & luck

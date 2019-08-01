@@ -40,7 +40,7 @@ See :doc:`here <method-documentation-format>` for an explanation of the method d
     :outertype: Conditions
 
     Parses a `DataMap <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/>`_ into a ``LootCondition``.
-    
+
     :param json: an instance of ``DataMap`` representing a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
     :return: ``json`` as a LootCondition
     :errors: if ``json`` is not a ``DataMap``
