@@ -46,4 +46,5 @@ See :doc:`here <method-documentation-format>` for an explanation of the method d
 Pool Names
 ----------
 Pools you add have whatever name you give them.
-The first default pool in a table is named main. Successive pools are named in the format poolN, where N is a number that starts at 1 and increments for each pool.
+The first default pool in a table is named main. Successive pools are named in the format poolN,
+where N is a number that starts at 1 and increments for each pool.

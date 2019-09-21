@@ -1,11 +1,11 @@
 Commands
 ========
 
-LootTweaker adds a single command, /ct loottables. 
-    
+LootTweaker adds a single command, /ct loottables.
+
 Subcommands
 -----------
-.. option:: all 
+.. option:: all
 
     | Dumps all built-in loot tables.
     | Example:
@@ -13,12 +13,12 @@ Subcommands
 
 .. option:: target
 
-    | Dumps the loot table associated with the object the player is looking at. 
+    | Dumps the loot table associated with the object the player is looking at.
     | Example:
     | ``/ct loottables target``
-    
+
     .. note::
-    
+
         Loot containers lose their loot table data after they are first opened, and some entities don't have a loot table (e.g The Wither).
 
 .. option:: byName <tableID>
@@ -29,7 +29,7 @@ Subcommands
 
 .. option:: list
 
-    | Lists all built-in loot tables.  
+    | Lists all built-in loot tables.
     | Example:
     | ``/ct loottables list``
 

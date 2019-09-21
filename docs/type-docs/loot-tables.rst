@@ -29,5 +29,5 @@ See :doc:`here <method-documentation-format>` for an explanation of the method d
 
 Registered Tables
 -----------------
-``getTable()`` only works for tables that exist and are registered with vanilla's registry. Most mods register their tables, but some do not. 
-Most loot tables should be registered, but some should not. See :doc:`this tutorial </tutorials/modifying-inject-tables>` for a complete explanation. 
+``getTable()`` only works for tables that exist and are registered with vanilla's registry. Most mods register their tables, but some do not.
+Most loot tables should be registered, but some should not. See :doc:`this tutorial </tutorials/modifying-inject-tables>` for a complete explanation.
