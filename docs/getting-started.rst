@@ -11,8 +11,8 @@ Assumed Knowledge
 These docs will assume that you:
 
 * Are familiar with the basics of ZenScript (The language used for CraftTweaker scripts). If you are not, read `this <https://docs.blamejared.com/1.12/en/#Getting_Started/>`_, 
-and experiment with `crafting recipes <https://docs.blamejared.com/1.12/en/#Vanilla/Recipes/Crafting/Recipes_Crafting_Table/>`_ before continuing. It is very important that you
-understand ZenScript, otherwise you will have difficulty using LootTweaker. Also CraftTweaker is very useful for packmaking in general, you won't regret learning it.
+  and experiment with `crafting recipes <https://docs.blamejared.com/1.12/en/#Vanilla/Recipes/Crafting/Recipes_Crafting_Table/>`_ before continuing. It is very important that you
+  understand ZenScript, otherwise you will have difficulty using LootTweaker. Also CraftTweaker is very useful for packmaking in general, you won't regret learning it.
 * Understand what tables, pools, entries, conditions, and functions are in the context of Minecraft's loot system. A complete in-depth understanding is not expected.
 
 Essential Reading
