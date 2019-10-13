@@ -27,7 +27,7 @@ Explanation
   No modifiers means the method is an instance method.
 | The return type is either the name of a ZenScript type, which means the method returns an instance of that type; or it is the keyword ``void``, which means the method returns nothing.
 | The name is a valid ZenScript variable name.
-| A method has zero or more parameters, which are enclosed in parentheses and separated by comments.
+| A method has zero or more parameters, which are enclosed in parentheses and separated by commas.
 | A parameter consists of a ZenScript type name followed by the name of the parameter, which is a valid ZenScript variable name. If it is preceded by ``@Optional`` it is an optional parameter, so you do not have to specify it when calling the method. Optional parameters always come last in the parameter list.
 
 
