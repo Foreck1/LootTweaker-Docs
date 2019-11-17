@@ -37,12 +37,12 @@ Common Types
 Type Name  Description                                  Examples
 ========== =================================================================================================== ============================================================================
 IItemStack An item stack with metadata, size & NBT data.                                                       | ``<minecraft:apple>``
-           `More info <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Items/IItemStack/#iitemstack>`_  | ``<minecraft:potato> * 3``
+           `More info <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Items/IItemStack/#iitemstack>`__  | ``<minecraft:potato> * 3``
                                                                                                                | ``<minecraft:dye:3>``
 
 DataMap    A representation of map-like formats,                                                               | ``{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 3.0}}``
            such as JSON and NBT.                                                                               | ``{"condition": "killed_by_player"}``
-           `More info <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/#datamap>`_
+           `More info <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/#datamap>`__
 
 String     A sequence of characters.                                                                           | ``"Alice"``
                                                                                                                | ``"cat@example.com"``
