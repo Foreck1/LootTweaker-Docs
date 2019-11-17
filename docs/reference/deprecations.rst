@@ -13,6 +13,13 @@ This is called deprecation.
 Below is a list of all the deprecated methods. It explains why they were deprecated, what their replacement is, when they were deprecated,
 and when they will be removed. The most recent deprecations are at the top
 
+``LootTables.getTableUnchecked(String tableName)``
+--------------------------------
+    :Reason: Improvements in how ``LootTables.getTable(String tableName)`` validates table ids made this method obsolete. getTable can now get any table.
+    :Replacement: ``LootTables.getTable(String tableName)``
+    :Deprecated: 0.1.0
+    :Removed: Future version
+
 ``Functions.parse(String json)``
 --------------------------------
     :Reason: Using strings to take JSON input has issues with nested quotes. Using DataMap avoids this problem.
