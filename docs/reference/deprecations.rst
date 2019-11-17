@@ -14,7 +14,7 @@ Below is a list of all the deprecated methods. It explains why they were depreca
 and when they will be removed. The most recent deprecations are at the top
 
 ``LootTables.getTableUnchecked(String tableName)``
---------------------------------
+--------------------------------------------------
     :Reason: Improvements in how ``LootTables.getTable(String tableName)`` validates table ids made this method obsolete. getTable can now get any table.
     :Replacement: ``LootTables.getTable(String tableName)``
     :Deprecated: 0.1.0
