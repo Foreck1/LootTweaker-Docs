@@ -204,3 +204,13 @@ See :doc:`here <method-documentation-format>` for an explanation of the method d
 
     :param min: the new minimum bonus rolls value.
     :param max: the new maximum bonus rolls value.
+    
+.. java:method:: void clearConditions()
+    :outertype: LootPool
+
+    Removes all loot conditions attached to this loot pool. Loot conditions and loot functions attached to child entries are unaffected.
+    
+.. java:method:: void clearEntries()
+    :outertype: LootPool
+    
+    Removes all entries from this loot pool.
