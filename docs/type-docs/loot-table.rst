@@ -13,7 +13,7 @@ See :doc:`here <method-documentation-format>` for an explanation of the method d
 
     Removes all loot from the loot table. This includes any loot added by a script before this method was run.
 
-.. java:method:: LootPool addPool(String poolName, int minRolls, int maxRolls, int minBonusRolls, int maxBonusRolls)
+.. java:method:: LootPool addPool(String poolName, float minRolls, float maxRolls, float minBonusRolls, float maxBonusRolls)
     :outertype: LootTable
 
     Adds a new pool to the table, and returns it.
