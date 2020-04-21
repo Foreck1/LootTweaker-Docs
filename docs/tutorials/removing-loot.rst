@@ -21,7 +21,7 @@ a) If the table is for an entity, spawn the entity ingame. Now look at the entit
 b) If it's for a loot chest, find a loot container that you think has the right loot table
    and **do not** open it. Now look at the chest and run the command ``/ct loottables target``.
 c) If it's neither of the above, check the the mod's documentation, or for vanilla,
-   `this list <https://minecraft.gamepedia.com/Loot_table#List_of_loot_tables>`.
+   `this list <https://minecraft.gamepedia.com/Loot_table#List_of_loot_tables>`_.
 
 If you found the name using c), run the command ``/ct loottables byName <loot table name>`` before continuing.
 
