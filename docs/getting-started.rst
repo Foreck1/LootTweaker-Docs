@@ -38,5 +38,6 @@ If text tutorials aren't your thing, there are 3rd party video tutorials around.
 Below are some we've watched and judged to be of good quality.
 They don't necessarily cover everything however.
 
-* | `How to make a Minecraft Modpack | Adding and Removing Loot from Entities(mobs) <https://youtu.be/Gam65KJ4RDM>`_ by IterationFunk
-  | This video also covers CraftTweaker's drop functions, LootTweaker content starts at `7:59 <https://youtu.be/Gam65KJ4RDM?t=479>`_.
+* | `How to make a Minecraft Modpack | Adding and Removing Loot from Entities(mobs) <https://youtu.be/Gam65KJ4RDM?t=479>`_ by IterationFunk
+  | Note that the first part of the video covers CraftTweaker's drop functions, LootTweaker content starts at 7:59.
+  | If he's writing stuff like ``<entity:minecraft:spider>.removeDrop(<minecraft:string>);`` you're watching the wrong part of the video.
