@@ -28,13 +28,13 @@ Example Script
     //Drop 3 apples when killed by a player
     sweetLoot.addItemEntryHelper(<minecraft:apple> * 3, 20, 1, [], [Conditions.killedByPlayer()]);
     //Drop 4 sticks when killed by a player
-    sweetLoot.addItemEntryJSON(<minecraft:stick> * 4, 20, 1, [], [{"condition": "killed_by_player"}]);
+    sweetLoot.addItemEntryJson(<minecraft:stick> * 4, 20, 1, [], [{"condition": "killed_by_player"}]);
     //Drop 1 potato when killed by a player while on fire
     sweetLoot.addItemEntryHelper(<minecraft:potato>, 20, 1, [], [Conditions.parse({"condition": "entity_properties", "entity": "this", "properties": {"on_fire": true}}), Conditions.killedByPlayer()]);
     //Drop 2-5 carrots
     sweetLoot.addItemEntryHelper(<minecraft:carrot>, 20, 1, [Functions.setCount(2, 5)], []);
     //Drop 3-9 redstone
-    sweetLoot.addItemEntryJSON(<minecraft:redstone>, 20, 1, [{"count": {"min": 3.0, "max": 9.0}, "function": "minecraft:set_count"}], []);
+    sweetLoot.addItemEntryJson(<minecraft:redstone>, 20, 1, [{"count": {"min": 3.0, "max": 9.0}, "function": "minecraft:set_count"}], []);
     //Drop 1-3 iron swords with 10-15% damage
     sweetLoot.addItemEntryHelper(<minecraft:iron_sword>, 20, 1, [Functions.parse({"count": {"min": 1.0, "max": 3.0}, "function": "minecraft:set_count"}), Functions.setDamage(0.10, 0.15)], []);
 

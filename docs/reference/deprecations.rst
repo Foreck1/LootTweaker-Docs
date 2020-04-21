@@ -44,7 +44,7 @@ and when they will be removed. The most recent deprecations are at the top
 ``LootPool#addConditionsJSON(String[] conditions)``
 ---------------------------------------------------
     :Reason: Using strings to take JSON input has issues with nested quotes. Using DataMap avoids this problem.
-    :Replacement: ``LootPool#addConditionsJSON(DataMap[] conditions)``
+    :Replacement: ``LootPool#addConditionsJson(DataMap[] conditions)``
     :Deprecated: 0.0.7
     :Removed: 0.0.8
 
@@ -65,20 +65,20 @@ and when they will be removed. The most recent deprecations are at the top
 ``LootPool#addItemEntryJSON(IItemStack iStack, int weight, int quality, String[] functions, String[] conditions, @Optional String name)``
 -----------------------------------------------------------------------------------------------------------------------------------------
     :Reason: Using strings to take JSON input has issues with nested quotes. Using DataMap avoids this problem.
-    :Replacement: ``LootPool#addItemEntryJSON(IItemStack iStack, int weight, int quality, DataMap[] functions, DataMap[] conditions, @Optional DataMap name)``
+    :Replacement: ``LootPool#addItemEntryJson(IItemStack iStack, int weight, int quality, DataMap[] functions, DataMap[] conditions, @Optional DataMap name)``
     :Deprecated: 0.0.7
     :Removed: 0.0.8
 
 ``LootPool#addLootTableEntryJSON(String tableName, int weightIn, int qualityIn, String[] conditions, @Optional String name)``
 -----------------------------------------------------------------------------------------------------------------------------
     :Reason: Using strings to take JSON input has issues with nested quotes. Using DataMap avoids this problem.
-    :Replacement: ``LootPool#addLootTableEntryJSON(DataMap tableName, int weightIn, int qualityIn, DataMap[] conditions, @Optional DataMap name)``
+    :Replacement: ``LootPool#addLootTableEntryJson(DataMap tableName, int weightIn, int qualityIn, DataMap[] conditions, @Optional DataMap name)``
     :Deprecated: 0.0.7
     :Removed: 0.0.8
 
 ``LootPool#addEmptyEntryJSON(int weight, int quality, String[] conditions, @Optional String name)``
 ---------------------------------------------------------------------------------------------------
     :Reason: Using strings to take JSON input has issues with nested quotes. Using DataMap avoids this problem.
-    :Replacement: ``LootPool#addEmptyEntryJSON(int weight, int quality, DataMap[] conditions, @Optional DataMap name)``
+    :Replacement: ``LootPool#addEmptyEntryJson(int weight, int quality, DataMap[] conditions, @Optional DataMap name)``
     :Deprecated: 0.0.7
     :Removed: 0.0.8
