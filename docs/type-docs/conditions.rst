@@ -43,6 +43,6 @@ See :doc:`here <method-documentation-format>` for an explanation of the method d
 
     :param json: an instance of ``DataMap`` representing a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
     :return: ``json`` as a LootCondition
-    :errors: if ``json`` is not a ``DataMap``
+    :errors: if ``json`` does not parse successfully.
 
 ``minecraft:entity_properties`` and ``minecraft:entity_scores`` do not have helper methods as they are too complex.

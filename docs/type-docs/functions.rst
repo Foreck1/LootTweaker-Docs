@@ -47,10 +47,11 @@ See :doc:`here <method-documentation-format>` for an explanation of the method d
 
     :equivalent to: ``minecraft:set_data``
 
-.. java:method :: static LootFunction setNBT(DataMap nbtAsJson)
+.. java:method :: static LootFunction setNBT(DataMap nbtData)
     :outertype: Functions
 
     :equivalent to: ``minecraft:set_nbt``
+    :errors: if ``nbtData`` is not a compound tag
 
 .. java:method :: static LootFunction smelt()
     :outertype: Functions
@@ -64,6 +65,6 @@ See :doc:`here <method-documentation-format>` for an explanation of the method d
 
     :param json: an instance of ``DataMap`` representing a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
     :return: ``json`` as a LootFunction.
-    :errors: if ``json`` is not a ``DataMap``.
+    :errors: if ``json`` does not parse successfully.
 
 ``minecraft:set_attributes`` does not have a helper method as it is too complex.
