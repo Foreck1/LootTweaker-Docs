@@ -20,9 +20,10 @@ The player's luck defaults to 0. In vanilla, it can be increased by the Luck sta
 Types of loot entries
 ---------------------
 In vanilla, there are 3 types of loot entries:
-* Item entry - Generates an item. Takes functions as well as conditions.
-* Loot table entry - Generates loot from another loot table.
-* Empty entry - Generates nothing.
+
+- Item entry - Generates an item. Takes functions as well as conditions.
+- Loot table entry - Generates loot from another loot table.
+- Empty entry - Generates nothing.
 
 Adding loot
 -----------
