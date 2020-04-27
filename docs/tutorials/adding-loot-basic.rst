@@ -55,5 +55,6 @@ Here's the script in one block, for easier reading ::
 .. note::
 
     Since weight is relative, there are no other entries in this pool, and the minimum number of rolls is one, this entry will always be generated.  If the minimum number of rolls was less than one, the pool might pick a non-positive value for **t** and not generate anything.
+    
     You may also remember that Forge requires loot entries to be named. Notice that I do not need to specify a name, this is because LootTweaker generates a unique name automatically if one is not specified. If I wanted to name the entry "stevelikesapples", I would add it like this. Note that if you specify a name you must ensure that it is unique.
     ``steve.addItemEntry(<minecraft:apple>, 5, "stevelikesapples");``
