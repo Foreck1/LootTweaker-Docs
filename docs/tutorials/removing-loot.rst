@@ -96,19 +96,19 @@ In this case it's in the pool called ``main``.
 
 Creating the script
 -------------------
-Finally, in your script import ``loottweaker.vanilla.loot.LootTables``,
+Finally, in your script import ``loottweaker.LootTweaker``,
 ``loottweaker.vanilla.loot.LootTable`` & ``loottweaker.vanilla.loot.LootPool``.
-Then combine ``LootTables.getTable()``, ``LootTable#getPool()`` & ``LootPool#removeEntry()``
+Then combine ``LootTweaker.getTable()``, ``LootTable#getPool()`` & ``LootPool#removeEntry()``
 with the table, pool and entry names you found earlier.
 The resulting script for removing porkchops from the pig loot table looks like this::
 
     //Import necessary types
-    import loottweaker.vanilla.loot.LootTables;
+    import loottweaker.LootTweaker;
     import loottweaker.vanilla.loot.LootTable;
     import loottweaker.vanilla.loot.LootPool;
 
     //Get the loot table named "minecraft:entities/pig" and store it for later use
-    val pig = LootTables.getTable("minecraft:entities/pig");
+    val pig = LootTweaker.getTable("minecraft:entities/pig");
     //Get the pool named "main" from the loot table and store it for later use
     val pigMain = pig.getPool("main");
     //Remove the entry named "minecraft:porkchop" from the loot pool
@@ -122,10 +122,10 @@ concise and readable.
 
 ::
 
-    import loottweaker.vanilla.loot.LootTables;
+    import loottweaker.LootTweaker;
     import loottweaker.vanilla.loot.LootTable;
     import loottweaker.vanilla.loot.LootPool;
 
-    LootTables.getTable("minecraft:entities/pig").getPool("main").removeEntry("minecraft:porkchop");
+    LootTweaker.getTable("minecraft:entities/pig").getPool("main").removeEntry("minecraft:porkchop");
 
 You are now ready to move  onto the next tutorial.

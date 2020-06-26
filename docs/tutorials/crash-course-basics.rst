@@ -37,9 +37,9 @@ static method
 instance method
     a method or field that can only be used *with* an instance of the type it is defined by.
 
-| An example of a static method is the method ``getTable`` of the type ``loottweaker.vanilla.loot.LootTables``.
-| Calling it looks something like this ``loottweaker.vanilla.loot.LootTables.getTable("minecraft:entities/pig")``.
-| Common notation for a static method is ``type_name.method_name()``, e.g. ``LootTables.getTable()``. Parameters are not included in the notation.
+| An example of a static method is the method ``getTable`` of the type ``loottweaker.LootTweaker``.
+| Calling it looks something like this ``loottweaker.LootTweaker.getTable("minecraft:entities/pig")``.
+| Common notation for a static method is ``type_name.method_name()``, e.g. ``LootTweaker.getTable()``. Parameters are not included in the notation.
 
 | An example of an instance method is the method ``getPool`` of the type ``loottweaker.vanilla.loot.LootTable``.
 | Calling it looks something like this ``pigTable.getPool("main")``, where ``pigTable`` is an instance of ``loottweaker.vanilla.loot.LootTable``.
@@ -52,12 +52,12 @@ This is done using the **var** & **val** keywords,
 the difference is that **var** allows you to change the piece of data the name refers to, while **val** does not.
 They allow you to replace this::
 
-    LootTables.getTable("foo").getPool("bar").removeEntry("baz");
-    LootTables.getTable("foo").getPool("bar").removeEntry("qux");
+    LootTweaker.getTable("foo").getPool("bar").removeEntry("baz");
+    LootTweaker.getTable("foo").getPool("bar").removeEntry("qux");
 
 with this::
 
-    val fooBar = LootTables.getTable("foo").getPool("bar");
+    val fooBar = LootTweaker.getTable("foo").getPool("bar");
     fooBar.removeEntry("baz");
     fooBar.removeEntry("qux");
 
@@ -70,7 +70,7 @@ Explanation of an Example Snippet
 Let's have a look at an example snippet. You won't know the methods used yet, but that's not important.::
 
     //Get the cow loot table and store it for later use
-    val cow = LootTables.getTable("minecraft:entities/cow");
+    val cow = LootTweaker.getTable("minecraft:entities/cow");
 
     //Get the pool named "main" from the cow loot table and store it for later use
     val cow_main = cow.getPool("main");

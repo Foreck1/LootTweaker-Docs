@@ -3,14 +3,14 @@ Example Script
 
 ::
 
-    import loottweaker.vanilla.loot.LootTables;
+    import loottweaker.LootTweaker;
     import loottweaker.vanilla.loot.LootTable;
     import loottweaker.vanilla.loot.LootPool;
     import loottweaker.vanilla.loot.Conditions;
     import loottweaker.vanilla.loot.Functions;
 
     //Get the sheep loot table and store it for later use
-    val sheep = LootTables.getTable("minecraft:entities/sheep");
+    val sheep = LootTweaker.getTable("minecraft:entities/sheep");
 
     //Get main from the sheep loot table and store it for later use
     val main = sheep.getPool("main");

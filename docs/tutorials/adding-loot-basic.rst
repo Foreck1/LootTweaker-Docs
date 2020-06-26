@@ -31,7 +31,7 @@ To add loot, you'll need to know the name of the loot table and the name of the 
 
 | As an example, I'll add an apple to a new pool called "steve" in the cow loot table.
 | First I get the cow loot table.
-| ``val cow = LootTables.getTable("minecraft:entities/cow");``
+| ``val cow = LootTweaker.getTable("minecraft:entities/cow");``
 | Then I create a pool called "steve" and store it. The last 4 parameters are minimum rolls, maximum rolls, minimum bonus rolls, and maximum bonus rolls, respectively.
 | ``val steve = cow.addPool("steve", 1, 1, 0, 0);``
 | If you want to add to an existing pool, call `LootTable#getPool()` on the table and pass it the name of the pool.
@@ -45,7 +45,7 @@ The Complete Script
 Here's the script in one block, for easier reading ::
 
     // Get the cow loot table and store it for later use
-    val cow = LootTables.getTable("minecraft:entities/cow");
+    val cow = LootTweaker.getTable("minecraft:entities/cow");
     // Add a pool called steve to the cow loot table, then store it for later use
     val steve = cow.addPool("steve", 1, 1, 0, 0);
     // Add an apple to "steve"

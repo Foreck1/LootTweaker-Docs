@@ -10,8 +10,22 @@ This is called deprecation.
 
 .. note:: Deprecation warnings can be disabled in LootTweaker's config. The config option will reset if you change the installed version of LootTweaker.
 
-Below is a list of all the deprecated methods. It explains why they were deprecated, what their replacement is, when they were deprecated,
+Below is a list of all the deprecated methods & classes. It explains why they were deprecated, what their replacement is, when they were deprecated,
 and when they will be removed. The most recent deprecations are at the top
+
+``LootTables``
+--------------------------------------------------
+    :Reason: The ``LootTables`` class was replaced by ``loottweaker.LootTweaker`` to fix confusion between it and ``LootTable``.
+    :Replacement: ``loottweaker.LootTweaker``
+    :Deprecated: 0.2.0
+    :Removed: Future version
+
+``LootTables.getTable(String tableName)``
+--------------------------------------------------
+    :Reason: The ``LootTables`` class was replaced by ``loottweaker.LootTweaker`` to fix confusion between it and ``LootTable``.
+    :Replacement: ``loottweaker.LootTweaker.getTable(String tableName)``
+    :Deprecated: 0.2.0
+    :Removed: Future version
 
 ``LootTables.getTableUnchecked(String tableName)``
 --------------------------------------------------
