@@ -1,7 +1,9 @@
 Conditions
 ==========
 
-:full name: ``loottweaker.vanilla.loot.Conditions``
+:full name: ``loottweaker.LootConditionFactory``
+
+An instance of this type is available to all scripts through the variable ``lootTweakerApi.conditions``.
 
 JSON can be verbose and difficult to write. This type can help.
 It provides methods for creating simple loot conditions, but if you wish to use complex loot conditions you still have to write them in JSON.

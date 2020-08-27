@@ -1,7 +1,9 @@
 Functions
 =========
 
-:full name: ``loottweaker.vanilla.loot.Functions``
+:full name: ``loottweaker.LootFunctionFactory``
+
+An instance of this type is available to all scripts through the variable ``lootTweakerApi.functions``.
 
 JSON can be verbose and difficult to write. This type can help.
 It provides methods for creating simple loot functions, but if you wish to use complex loot functions you still have to write them in JSON.

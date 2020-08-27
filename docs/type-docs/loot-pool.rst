@@ -1,7 +1,7 @@
 LootPool
 ========
 
-:full name: ``loottweaker.vanilla.loot.LootPool``
+:full name: ``loottweaker.LootPool``
 
 Each instance of this type represents a specific pool of a loot table.
 
@@ -227,12 +227,12 @@ See :doc:`here <method-documentation-format>` for an explanation of the method d
     :param min: the new minimum bonus rolls value.
     :param max: the new maximum bonus rolls value.
     
-.. java:method:: void clearConditions()
+.. java:method:: void removeAllConditions()
     :outertype: LootPool
 
     Removes all loot conditions attached to this loot pool. Loot conditions and loot functions attached to child entries are unaffected.
     
-.. java:method:: void clearEntries()
+.. java:method:: void removeAllEntries()
     :outertype: LootPool
     
     Removes all entries from this loot pool.

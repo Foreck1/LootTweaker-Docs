@@ -1,17 +1,28 @@
 LootTable
 =========
 
-:full name: ``loottweaker.vanilla.loot.LootTable``
+:full name: ``loottweaker.LootTable``
 
 Methods
 -------
 
 See :doc:`here <method-documentation-format>` for an explanation of the method documentation format used on this page.
 
-.. java:method:: void clear()
+.. java:method:: void removeAllPools()
     :outertype: LootTable
 
-    Removes all loot from the loot table. This includes any loot added by a script before this method was run.
+    Removes all pools from the loot table. This includes any pools added by a script before this method was run.
+
+.. java:method:: LootPool addPool(String poolName, float minRolls, float maxRolls)
+    :outertype: LootTable
+
+    Adds a new pool to the table and returns it. Bonus rolls are set to 0.
+
+    :param poolName: a name for the table. Must be unique within the table.
+    :param minRolls: the minimum rolls of the new pool.
+    :param maxRolls: the maximum rolls of the new pool.
+    :errors: if a pool with the same name already exists in the table
+    :return: the new pool
 
 .. java:method:: LootPool addPool(String poolName, float minRolls, float maxRolls, float minBonusRolls, float maxBonusRolls)
     :outertype: LootTable
