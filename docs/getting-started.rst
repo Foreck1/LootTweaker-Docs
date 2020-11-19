@@ -4,7 +4,7 @@ Out of the suite of CraftTweaker Add-Ons, LootTweaker tends to be one of the mos
 This is due, in large part, to the complexity of Minecraft’s loot system and the difficulty of creating a clean way of interacting with it.
 
 We have attempted to minimize the barrier of entry to using LootTweaker.
-However, there are a few concepts you’ll need to understand to make the most of it.
+However, there are a few concepts you'll need to understand to make the most of it.
 You’ll find information about these concepts in the links found in the Valuable Reading section, and in the Tutorials.
 
 Useful Concepts
@@ -14,7 +14,7 @@ Moving beyond the basics is going to require a more thorough understanding of th
 the language that the Tweaker suite runs on. The more you know about these topics, the more effective your use of LootTweaker will be.
 
 * **Zenscript**: ZenScript is a language developed for use with CraftTweaker implemented by all of its add-ons. A basic understanding of ZenScript can be gained on the CraftTweaker documentation page `here <https://docs.blamejared.com/1.12/en/#Getting_Started/>`_. A good place to get some experience using this language is writing `crafting recipes <https://docs.blamejared.com/1.12/en/#Vanilla/Recipes/Crafting/Recipes_Crafting_Table/>`_ with CraftTweaker.
-* **Minecraft LootTable Concepts**: The MC Wiki's `entry on loot tables <https://minecraft.gamepedia.com/Loot_table>`_ will help you understand how the system works and give you some idea of the scope of things that are possible to accomplish with it.
+* **Minecraft LootTable Concepts**: The MC Wiki's `entry on loot tables <https://minecraft.gamepedia.com/Loot_table?oldid=1192000>`_ will help you understand how the system works and give you some idea of the scope of things that are possible to accomplish with it.
 
 
 Coming Up Next
