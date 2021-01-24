@@ -7,9 +7,9 @@ Each instance of this type represents a specific pool of a loot table.
 
 Condition and function formatting
 ---------------------------------
-Conditions and functions should be supplied to methods as arrays of `DataMaps <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/>`_
-or [helper type methods](). Do not supply the conditions as part of a parent tag.
-When using `DataMap <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/>`_ to supply conditions or functions,
+Conditions and functions should be supplied to methods as arrays of `DataMaps <https://docs.blamejared.com/1.12/en/Vanilla/Data/DataMap/>`_
+or :doc:`conditions`/:doc:`functions`. Do not supply the conditions as part of a parent tag.
+When using `DataMap`_ to supply conditions or functions,
 it is recommended that you surround the keys with double quotes("), as otherwise any keys which are zenscript keywords(e.g function) will cause issues.
 
 Recommended::
@@ -48,7 +48,7 @@ See :doc:`here <method-documentation-format>` for an explanation of the method d
 
     Adds conditions to the pool.
 
-    :param conditions: an array of instances of `DataMap <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/>`_, each a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
+    :param conditions: an array of instances of `DataMap`_, each a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
     :errors: if any of the elements of ``conditions`` do not parse successfully.
 
 .. java:method:: void addConditionsHelper(LootCondition[] conditions)
@@ -74,8 +74,8 @@ See :doc:`here <method-documentation-format>` for an explanation of the method d
     :param iStack: the item stack the entry should produce. LootTweaker will autogenerate *set_nbt*, *set_damage*/*set_data* and *set_count* functions based on this stack, unless ``functions`` contains a function of the same type.
     :param weight: the main component that determines the generation chance. Higher weights make entries generate more often.
     :param quality: determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
-    :param functions: an array of instances of `DataMap <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/>`_, each a LootFunction in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
-    :param conditions: an array of instances of `DataMap <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/>`_, each a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
+    :param functions: an array of instances of `DataMap`_, each a LootFunction in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
+    :param conditions: an array of instances of `DataMap`_, each a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
     :param name: (Optional) a name for the entry. Must be unique within the pool.
     :errors: 
 
@@ -123,7 +123,7 @@ See :doc:`here <method-documentation-format>` for an explanation of the method d
     :param tableName: the identifier for the table the entry should generate loot from.
     :param weight: the main component that determines the generation chance. Higher weights make entries generate more often.
     :param quality: determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
-    :param conditions: an array of instances of `DataMap <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/>`_, each a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
+    :param conditions: an array of instances of `DataMap`_, each a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
     :param name: (Optional) a name for the entry. Must be unique within the pool.
     :errors: 
 
@@ -184,7 +184,7 @@ See :doc:`here <method-documentation-format>` for an explanation of the method d
 
     :param weight: the main component that determines the generation chance. Higher weights make entries generate more often.
     :param quality: determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
-    :param conditions: an array of instances of `DataMap <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/>`_, each a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
+    :param conditions: an array of instances of `DataMap`_, each a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
     :param name: (Optional) a name for the entry. Must be unique within the pool.
     :errors: 
 
@@ -236,3 +236,5 @@ See :doc:`here <method-documentation-format>` for an explanation of the method d
     :outertype: LootPool
     
     Removes all entries from this loot pool.
+
+.. _DataMap: https://docs.blamejared.com/1.12/en/Vanilla/Data/DataMap/

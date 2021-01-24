@@ -61,7 +61,7 @@ See :doc:`here <method-documentation-format>` for an explanation of the method d
 .. java:method :: static LootFunction parse(DataMap json)
     :outertype: Functions
 
-    Parses a `DataMap <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/>`_ into a ``LootFunction``.
+    Parses a `DataMap <https://docs.blamejared.com/1.12/en/Vanilla/Data/DataMap/>`_ into a ``LootFunction``.
 
     :param json: an instance of ``DataMap`` representing a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
     :return: ``json`` as a LootFunction.

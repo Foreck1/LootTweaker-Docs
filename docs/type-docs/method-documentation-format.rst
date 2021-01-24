@@ -42,7 +42,7 @@ IItemStack An item stack with metadata, size & NBT data.                        
 
 DataMap    A representation of map-like formats,                                                               | ``{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 3.0}}``
            such as JSON and NBT.                                                                               | ``{"condition": "killed_by_player"}``
-           `More info <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Data/DataMap/#datamap>`__
+           `More info <https://docs.blamejared.com/1.12/en/Vanilla/Data/DataMap/#datamap>`__
 
 String     A sequence of characters.                                                                           | ``"Alice"``
                                                                                                                | ``"cat@example.com"``
