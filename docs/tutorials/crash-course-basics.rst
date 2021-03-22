@@ -43,7 +43,7 @@ instance method
 
 | An example of an instance method is the method ``getPool`` of the type ``loottweaker.vanilla.loot.LootTable``.
 | Calling it looks something like this ``pigTable.getPool("main")``, where ``pigTable`` is an instance of ``loottweaker.vanilla.loot.LootTable``.
-| Common notation for a static method is ``type_name#method_name()``, e.g. ``LootTable#getPool()``. Parameters are not included in the notation.
+| Common notation (not syntax, so not valid code!) for an instance method is ``type_name#method_name()``, e.g. ``LootTable#getPool()``. Parameters are not included in the notation.
 
 Crash Course in Local Variables
 -------------------------------
@@ -78,10 +78,11 @@ Let's have a look at an example snippet. You won't know the methods used yet, bu
     //Remove leather from "main"
     cow_main.removeEntry("minecraft:leather");
 
-This snippet prevents cows dropping leather. It's fairly simple:
-* The cow loot table is retrieved and stored
-* The pool called "main" is retrieved from the table and stored
-* The entry called "minecraft:leather" is removed from the pool
+This snippet prevents cows dropping leather.
+
+1. The cow loot table is retrieved and stored
+2. The pool called "main" is retrieved from the table and stored
+3. The entry called "minecraft:leather" is removed from the pool
 
 Two of the methods in the snippet, `getPool()` & `removeEntry()` are instance methods. They must be called on an instance of `LootTable` & `LootPool` respectively. In the case of `getPool()` the instance used is the one returned earlier by `LootTable.getTable()`. In the case of `removeEntry()` the instance used is the one returned earlier by `getPool()`. `LootTable.getTable()` is the only static method.
 
