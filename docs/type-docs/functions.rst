@@ -5,6 +5,7 @@ Functions
 
 JSON can be verbose and difficult to write. This type can help.
 It provides methods for creating simple loot functions, but if you wish to use complex loot functions you still have to write them in JSON.
+``minecraft:set_attributes`` does not have a helper method as it is too complex.
 
 All methods on this page, except ``parse()`` create a vanilla loot function, so their parameters are equivalent to the parameters of the equivalent loot function.
 All vanilla loot functions are listed and documented `here <https://minecraft.gamepedia.com/Loot_table#Functions>`_.
@@ -16,55 +17,55 @@ Methods
 
 See :doc:`here <method-documentation-format>` for an explanation of the method documentation format used on this page.
 
-.. java:method :: static LootFunction enchantRandomly(String[] enchantIDList)
-    :outertype: Functions
+static LootFunction enchantRandomly(String[] enchantIDList)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     :equivalent to: ``minecraft:enchant_randomly``
     :errors: if any enchantment ID does not resolve to an enchantment
 
-.. java:method :: static LootFunction enchantWithLevels(int min, int max, boolean isTreasure)
-    :outertype: Functions
+static LootFunction enchantWithLevels(int min, int max, boolean isTreasure)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     :equivalent to: ``minecraft:enchant_with_levels``
 
-.. java:method :: static LootFunction lootingEnchantBonus(int min, int max, int limit)
-    :outertype: Functions
+static LootFunction lootingEnchantBonus(int min, int max, int limit)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     :equivalent to: ``minecraft:looting_enchant``
 
-.. java:method :: static LootFunction setCount(int min, int max)
+static LootFunction setCount(int min, int max)
+++++++++++++++++++++++++++++++++++++++++++++++
 
     :equivalent to: ``minecraft:set_count``
 
-.. java:method :: static LootFunction setDamage(float min, float max)
-    :outertype: Functions
+static LootFunction setDamage(float min, float max)
++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     :equivalent to: ``minecraft:set_damage``
     :errors: if ``max`` is greater than 1.0
 
-.. java:method :: static LootFunction setMetadata(int min, int max)
-    :outertype: Functions
+static LootFunction setMetadata(int min, int max)
++++++++++++++++++++++++++++++++++++++++++++++++++
 
     :equivalent to: ``minecraft:set_data``
 
-.. java:method :: static LootFunction setNBT(DataMap nbtData)
-    :outertype: Functions
+static LootFunction setNBT(DataMap nbtData)
++++++++++++++++++++++++++++++++++++++++++++
 
     :equivalent to: ``minecraft:set_nbt``
     :errors: if ``nbtData`` is not a compound tag
 
-.. java:method :: static LootFunction smelt()
-    :outertype: Functions
+static LootFunction smelt()
++++++++++++++++++++++++++++
 
     :equivalent to: ``minecraft:furnace_smelt``
 
-.. java:method :: static LootFunction parse(DataMap json)
-    :outertype: Functions
+static LootFunction parse(DataMap json)
++++++++++++++++++++++++++++++++++++++++
 
     Parses a `DataMap <https://docs.blamejared.com/1.12/en/Vanilla/Data/DataMap/>`_ into a ``LootFunction``.
 
-    :param json: an instance of ``DataMap`` representing a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
-    :return: ``json`` as a LootFunction.
+    :parameters: 
+        * json - an instance of ``DataMap`` representing a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
+    :returns: ``json`` as a LootFunction.
     :errors: if ``json`` does not parse successfully.
-
-``minecraft:set_attributes`` does not have a helper method as it is too complex.

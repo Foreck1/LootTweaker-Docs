@@ -47,197 +47,245 @@ Methods
 
 See :doc:`here <method-documentation-format>` for an explanation of the method documentation format used on this page.
 
-.. java:method:: void addConditionsJson(DataMap[] conditions)
-    :outertype: LootPool
+void addConditionsJson(DataMap[] conditions)
+++++++++++++++++++++++++++++++++++++++++++++
 
     Adds conditions to the pool.
 
-    :param conditions: an array of instances of `DataMap`_, each a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
+    :parameters: 
+
+    * conditions - an array of instances of `DataMap`_, each a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
+  
     :errors: if any of the elements of ``conditions`` do not parse successfully.
 
-.. java:method:: void addConditionsHelper(LootCondition[] conditions)
-    :outertype: LootPool
+void addConditionsHelper(LootCondition[] conditions)
+++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     Adds conditions to the pool.
 
-    :param conditions: an array of instances of :doc:`LootCondition <conditions>`
+    :parameters:
 
-.. java:method:: void removeEntry(String entryName)
-    :outertype: LootPool
+    * conditions - an array of instances of :doc:`LootCondition <conditions>`
+
+void removeEntry(String entryName)
+++++++++++++++++++++++++++++++++++
 
     Removes the entry with a matching ``entryName`` tag from the pool
 
-    :param entryName: The unique name of the target entry
+    :parameters:
+    
+    * entryName - the unique name of the target entry
+
     :errors: if no entry with the specified name exists in the pool
 
-.. java:method:: void addItemEntryJson(IItemStack iStack, int weight, int quality, DataMap[] functions, DataMap[] conditions, @Optional String name)
-    :outertype: LootPool
+void addItemEntryJson(IItemStack iStack, int weight, int quality, DataMap[] functions, DataMap[] conditions, @Optional String name)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     Adds a new ``item`` type entry to the pool.
 
-    :param iStack: the item stack the entry should produce. LootTweaker will autogenerate *set_nbt*, *set_damage*/*set_data* and *set_count* functions based on this stack, unless ``functions`` contains a function of the same type.
-    :param weight: the main component that determines the generation chance. Higher weights make entries generate more often.
-    :param quality: determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
-    :param functions: an array of instances of `DataMap`_, each a LootFunction in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
-    :param conditions: an array of instances of `DataMap`_, each a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
-    :param name: (Optional) a name for the entry. Must be unique within the pool.
+    :parameters:
+
+    * iStack - the item stack the entry should produce. LootTweaker will autogenerate *set_nbt*, *set_damage*/*set_data* and *set_count* functions based on this stack, unless ``functions`` contains a function of the same type.
+    * weight - the main component that determines the generation chance. Higher weights make entries generate more often.
+    * quality - determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
+    * functions - an array of instances of `DataMap`_, each a LootFunction in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
+    * conditions - an array of instances of `DataMap`_, each a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
+    * name - (Optional) a name for the entry. Must be unique within the pool.
+    
     :errors: 
 
-    - if any of the elements of ``conditions`` do not parse successfully.
-    - if the pool already contains an entry with the same name.
+    * if any of the elements of ``conditions`` do not parse successfully.
+    * if the pool already contains an entry with the same name.
 
-.. java:method:: void addItemEntryHelper(IItemStack iStack, int weight, int quality, LootFunction[] functions, LootCondition[] conditions, @Optional String name)
-    :outertype: LootPool
+void addItemEntryHelper(IItemStack iStack, int weight, int quality, LootFunction[] functions, LootCondition[] conditions, @Optional String name)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     Adds a new ``item`` type entry to the pool.
 
-    :param iStack: the item stack the entry should produce. LootTweaker will autogenerate *set_nbt*, *set_damage*/*set_data* and *set_count* functions based on this stack, unless ``functions`` contains a function of the same type.
-    :param weight: the main component that determines the generation chance. Higher weights make entries generate more often.
-    :param quality: determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
-    :param functions: :doc:`functions <functions>` that affect the stack(s) generated by the entry.
-    :param conditions: :doc:`conditions <conditions>` for the generation of the entry.
-    :param name: (Optional) a name for the entry. Must be unique within the pool.
+    :parameters: 
+    
+    * iStack - the item stack the entry should produce. LootTweaker will autogenerate *set_nbt*, *set_damage*/*set_data* and *set_count* functions based on this stack, unless ``functions`` contains a function of the same type.
+    * weight - the main component that determines the generation chance. Higher weights make entries generate more often.
+    * quality - determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
+    * functions - :doc:`functions <functions>` that affect the stack(s) generated by the entry.
+    * conditions - :doc:`conditions <conditions>` for the generation of the entry.
+    * name - (Optional) a name for the entry. Must be unique within the pool.
+
     :errors: if the pool already contains an entry with the same name.
 
-.. java:method:: void addItemEntry(IItemStack stack, int weightIn, int qualityIn, @Optional String name)
-    :outertype: LootPool
+void addItemEntry(IItemStack stack, int weightIn, int qualityIn, @Optional String name)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     Adds a new ``item`` type entry to the pool, with no conditions or functions.
 
-    :param iStack: the item stack the entry should produce. LootTweaker will autogenerate *set_nbt*, *set_damage*/*set_data* and *set_count* functions based on this stack, unless ``functions`` contains a function of the same type.
-    :param weight: the main component that determines the generation chance. Higher weights make entries generate more often.
-    :param name: (Optional) a name for the entry. Must be unique within the pool.
+    :parameters:
+    
+    * iStack - the item stack the entry should produce. LootTweaker will autogenerate *set_nbt*, *set_damage*/*set_data* and *set_count* functions based on this stack, unless ``functions`` contains a function of the same type.
+    * weight - the main component that determines the generation chance. Higher weights make entries generate more often.
+    * name - (Optional) a name for the entry. Must be unique within the pool.
+
     :errors: if the pool already contains an entry with the same name.
 
-.. java:method:: void addItemEntry(IItemStack stack, int weightIn, @Optional String name)
-    :outertype: LootPool
+void addItemEntry(IItemStack stack, int weightIn, @Optional String name)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     Adds a new ``item`` type entry to the pool, with no conditions or functions, and a quality of 0.
 
-    :param iStack: the item stack the entry should produce. LootTweaker will autogenerate *set_nbt*, *set_damage*/*set_data* and *set_count* functions based on this stack, unless ``functions`` contains a function of the same type.
-    :param weight: the main component that determines the generation chance. Higher weights make entries generate more often.
-    :param name: (Optional) a name for the entry. Must be unique within the pool.
+    :parameters:
+
+    * iStack - the item stack the entry should produce. LootTweaker will autogenerate *set_nbt*, *set_damage*/*set_data* and *set_count* functions based on this stack, unless ``functions`` contains a function of the same type.
+    * weight - the main component that determines the generation chance. Higher weights make entries generate more often.
+    * name - (Optional) a name for the entry. Must be unique within the pool.
+
     :errors: if the pool already contains an entry with the same name.
 
-.. java:method:: void addLootTableEntryJson(String tableName, int weightIn, int qualityIn, DataMap[] conditions, @Optional String name)
-    :outertype: LootPool
+void addLootTableEntryJson(String tableName, int weightIn, int qualityIn, DataMap[] conditions, @Optional String name)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     Adds a new ``loot_table`` type entry to the pool.
 
-    :param tableName: the identifier for the table the entry should generate loot from.
-    :param weight: the main component that determines the generation chance. Higher weights make entries generate more often.
-    :param quality: determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
-    :param conditions: an array of instances of `DataMap`_, each a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
-    :param name: (Optional) a name for the entry. Must be unique within the pool.
+    :parameters:
+    
+    * tableName - the identifier for the table the entry should generate loot from.
+    * weight - the main component that determines the generation chance. Higher weights make entries generate more often.
+    * quality - determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
+    * conditions - an array of instances of `DataMap`_, each a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
+    * name - (Optional) a name for the entry. Must be unique within the pool.
+
     :errors: 
 
-    - if any of the elements of ``conditions`` do not parse successfully.
-    - if the pool already contains an entry with the same name.
+    * if any of the elements of ``conditions`` do not parse successfully.
+    * if the pool already contains an entry with the same name.
 
-.. java:method:: void addLootTableEntryHelper(String tableName, int weightIn, int qualityIn, LootCondition[] conditions, @Optional String name)
-    :outertype: LootPool
+void addLootTableEntryHelper(String tableName, int weightIn, int qualityIn, LootCondition[] conditions, @Optional String name)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     Adds a new ``loot_table`` type entry to the pool.
 
-    :param tableName: the identifier for the table the entry should generate loot from.
-    :param weight: the main component that determines the generation chance. Higher weights make entries generate more often.
-    :param quality: determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
-    :param conditions: :doc:`conditions <conditions>` for the generation of the entry.
-    :param name: (Optional) a name for the entry. Must be unique within the pool.
+    :parameters:
+
+    * tableName - the identifier for the table the entry should generate loot from.
+    * weight - the main component that determines the generation chance. Higher weights make entries generate more often.
+    * quality-  determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
+    * conditions - :doc:`conditions <conditions>` for the generation of the entry.
+    * name - (Optional) a name for the entry. Must be unique within the pool.
+
     :errors: if the pool already contains an entry with the same name.
 
-.. java:method:: void addLootTableEntry(String tableName, int weightIn, int qualityIn, @Optional String name)
-    :outertype: LootPool
+void addLootTableEntry(String tableName, int weightIn, int qualityIn, @Optional String name)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     Adds a new ``loot_table`` type entry to the pool with no conditions.
 
-    :param tableName: the identifier for the table the entry should generate loot from.
-    :param weight: the main component that determines the generation chance. Higher weights make entries generate more often.
-    :param quality: determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
-    :param conditions: conditions for the generation of the entry.
-    :param name: (Optional) a name for the entry. Must be unique within the pool.
+    :parameters: 
+    
+    * tableName - the identifier for the table the entry should generate loot from.
+    * weight - the main component that determines the generation chance. Higher weights make entries generate more often.
+    * quality - determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
+    * conditions - conditions for the generation of the entry.
+    * name - (Optional) a name for the entry. Must be unique within the pool.
+
     :errors: if the pool already contains an entry with the same name.
 
-.. java:method:: void addLootTableEntry(String tableName, int weightIn, @Optional String name)
-    :outertype: LootPool
+void addLootTableEntry(String tableName, int weightIn, @Optional String name)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     Adds a new ``loot_table`` type entry to the pool with no conditions, and a quality of 0.
 
-    :param tableName: the identifier for the table the entry should generate loot from.
-    :param weight: the main component that determines the generation chance. Higher weights make entries generate more often.
-    :param quality: determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
-    :param conditions: conditions for the generation of the entry.
-    :param name: (Optional) a name for the entry. Must be unique within the pool.
+    :parameters:
+
+    * tableName - the identifier for the table the entry should generate loot from.
+    * weight - the main component that determines the generation chance. Higher weights make entries generate more often.
+    * quality - determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
+    * conditions - conditions for the generation of the entry.
+    * name - (Optional) a name for the entry. Must be unique within the pool.
+
     :errors: if the pool already contains an entry with the same name.
 
-.. java:method:: void addEmptyEntryHelper(int weight, int quality, LootCondition[] conditions, @Optional String name)
-    :outertype: LootPool
+void addEmptyEntryHelper(int weight, int quality, LootCondition[] conditions, @Optional String name)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     Adds a new ``empty`` type entry to the pool.
 
-    :param weight: the main component that determines the generation chance. Higher weights make entries generate more often.
-    :param quality: determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
-    :param conditions: :doc:`conditions <conditions>` for the generation of the entry.
-    :param name: (Optional) a name for the entry. Must be unique within the pool.
+    :parameters:
+
+    * weight - the main component that determines the generation chance. Higher weights make entries generate more often.
+    * quality - determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
+    * conditions - :doc:`conditions <conditions>` for the generation of the entry.
+    * name - (Optional) a name for the entry. Must be unique within the pool.
+
     :errors: if the pool already contains an entry with the same name.
 
-.. java:method:: void addEmptyEntryJson(int weight, int quality, DataMap[] conditions, @Optional String name)
-    :outertype: LootPool
+void addEmptyEntryJson(int weight, int quality, DataMap[] conditions, @Optional String name)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     Adds a new ``empty`` type entry to the pool.
 
-    :param weight: the main component that determines the generation chance. Higher weights make entries generate more often.
-    :param quality: determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
-    :param conditions: an array of instances of `DataMap`_, each a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
-    :param name: (Optional) a name for the entry. Must be unique within the pool.
+    :parameters:
+    
+    * weight - the main component that determines the generation chance. Higher weights make entries generate more often.
+    * quality - determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
+    * conditions - an array of instances of `DataMap`_, each a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
+    * name - (Optional) a name for the entry. Must be unique within the pool.
+
     :errors: 
 
-    - if any of the elements of ``conditions`` do not parse successfully.
-    - if the pool already contains an entry with the same name.
+    * if any of the elements of ``conditions`` do not parse successfully.
+    * if the pool already contains an entry with the same name.
 
-.. java:method:: void addEmptyEntry(int weight, int quality, @Optional String name)
-    :outertype: LootPool
+void addEmptyEntry(int weight, int quality, @Optional String name)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     Adds a new ``empty`` type entry to the pool with no conditions.
 
-    :param weight: the main component that determines the generation chance. Higher weights make entries generate more often.
-    :param quality: determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
-    :param name: (Optional) a name for the entry. Must be unique within the pool.
+    :parameters:
+
+    * weight - the main component that determines the generation chance. Higher weights make entries generate more often.
+    * quality - determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
+    * name - (Optional) a name for the entry. Must be unique within the pool.
+
     :errors: if the pool already contains an entry with the same name.
 
-.. java:method:: void addEmptyEntry(int weight, @Optional String name)
-    :outertype: LootPool
+void addEmptyEntry(int weight, @Optional String name)
++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     Adds a new ``empty`` type entry to the pool with no conditions, and a quality of 0.
 
-    :param weight: the main component that determines the generation chance. Higher weights make entries generate more often.
-    :param quality: determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
-    :param name: (Optional) a name for the entry. Must be unique within the pool.
+    :parameters: 
+    
+    * weight - the main component that determines the generation chance. Higher weights make entries generate more often.
+    * quality - determines how much the Luck attribute affects the generation chance. Higher qualities make the luck attribute affect the generation chance more.
+    * name - (Optional) a name for the entry. Must be unique within the pool.
+
     :errors: if the pool already contains an entry with the same name.
 
-.. java:method:: void setRolls(float min, float max)
-    :outertype: LootPool
+void setRolls(float min, float max)
++++++++++++++++++++++++++++++++++++
 
     Sets the minimum and maximum rolls of the pool to the specified values.
 
-    :param min: the new minimum rolls value.
-    :param max: the new maximum rolls value.
+    :parameters:
+    
+    * min - the new minimum rolls value
+    * max - the new maximum rolls value
 
-.. java:method:: void setBonusRolls(float min, float max)
-    :outertype: LootPool
+void setBonusRolls(float min, float max)
+++++++++++++++++++++++++++++++++++++++++
 
     Sets the minimum and maximum bonus rolls of the pool to the specified values.
 
-    :param min: the new minimum bonus rolls value.
-    :param max: the new maximum bonus rolls value.
+    :parameters:
+
+    * min - the new minimum bonus rolls value.
+    * max - the new maximum bonus rolls value.
     
-.. java:method:: void clearConditions()
-    :outertype: LootPool
+void clearConditions()
+++++++++++++++++++++++
 
     Removes all loot conditions attached to this loot pool. Loot conditions and loot functions attached to child entries are unaffected.
     
-.. java:method:: void clearEntries()
-    :outertype: LootPool
+void clearEntries()
++++++++++++++++++++
     
     Removes all entries from this loot pool.
 

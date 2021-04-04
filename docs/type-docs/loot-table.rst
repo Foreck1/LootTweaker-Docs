@@ -8,40 +8,49 @@ Methods
 
 See :doc:`here <method-documentation-format>` for an explanation of the method documentation format used on this page.
 
-.. java:method:: void clear()
-    :outertype: LootTable
+void clear()
+++++++++++++
 
     Removes all loot from the loot table. This includes any loot added by a script before this method was run.
 
-.. java:method:: LootPool addPool(String poolName, float minRolls, float maxRolls, float minBonusRolls, float maxBonusRolls)
-    :outertype: LootTable
+LootPool addPool(String poolName, float minRolls, float maxRolls, float minBonusRolls, float maxBonusRolls)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     Adds a new pool to the table, and returns it.
 
-    :param poolName: a name for the table. Must be unique within the table.
-    :param minRolls: the minimum rolls of the new pool.
-    :param maxRolls: the maximum rolls of the new pool.
-    :param minBonusRolls: the minimum bonus rolls of the new pool.
-    :param maxBonusRolls: the maximum bonus rolls of the new pool.
-    :errors: if a pool with the same name already exists in the table
-    :return: the new pool
+    :parameters:
 
-.. java:method:: void removePool(String poolName)
-    :outertype: LootTable
+    * poolName - a name for the table. Must be unique within the table.
+    * minRolls - the minimum rolls of the new pool.
+    * maxRolls - the maximum rolls of the new pool.
+    * minBonusRolls-  the minimum bonus rolls of the new pool.
+    * maxBonusRolls - the maximum bonus rolls of the new pool.
+
+    :errors: if a pool with the same name already exists in the table
+    :returns: the new pool
+
+void removePool(String poolName)
+++++++++++++++++++++++++++++++++
 
     Removes the pool with the name `poolName`.
 
-    :param poolName: the table-unique name of the pool
+    :parameters:
+
+    * poolName - the table-unique name of the pool
+
     :errors: if no loot pool with the specified name exists.
 
-.. java:method:: LootPool getPool(String poolName)
-    :outertype: LootTable
+LootPool getPool(String poolName)
++++++++++++++++++++++++++++++++++
 
     Gets a LootPool by name.
 
-    :param poolName: the table-unique name of the pool
+    :parameters:
+
+    * poolName - the table-unique name of the pool
+
     :errors: if no loot pool with the specified name exists.
-    :return: the loot pool with the specified name.
+    :returns: the loot pool with the specified name.
 
 Pool Names
 ----------

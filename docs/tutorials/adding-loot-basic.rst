@@ -5,7 +5,7 @@ In this tutorial you will learn the basics of adding loot to a loot table. This 
 
 A basic overview of loot generation
 -----------------------------------
-To generate loot from a loot table, each pool in the table is asked to generate loot.
+To generate loot from a loot table, each pool in the table is asked to generate loot. 
 Each pool then checks that all the conditions attached to it output true. If they do,
 it calculates a number **t** based on the `rolls` & `bonus_rolls` parameters of that pool and the player's luck.
 The pool then generates a list of all the entries it contains with conditions that all output true.
@@ -31,10 +31,10 @@ To add loot, you'll need to know the name of the loot table and the name of the 
 
 | As an example, I'll add an apple to a new pool called "steve" in the cow loot table.
 | First I get the cow loot table.
-| ``val cow = LootTweaker.getTable("minecraft:entities/cow");``
+| val cow = LootTweaker.getTable("minecraft:entities/cow");
 | Then I create a pool called "steve" and store it. The last 4 parameters are minimum rolls, maximum rolls, minimum bonus rolls, and maximum bonus rolls, respectively.
-| ``val steve = cow.addPool("steve", 1, 1, 0, 0);``
-| If you want to add to an existing pool, call `LootTable#getPool()` on the table and pass it the name of the pool.
+| val steve = cow.addPool("steve", 1, 1, 0, 0);
+| If you want to add to an existing pool, call `LootTable#getPool()` on the table and pass it the name of the pool
 
 | Finally, I add an apple to steve.
 | ``steve.addItemEntry(<minecraft:apple>, 5);``
