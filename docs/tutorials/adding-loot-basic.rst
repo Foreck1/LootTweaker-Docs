@@ -42,7 +42,9 @@ To add loot, you'll need to know the name of the loot table and the name of the 
 
 The Complete Script
 -------------------
-Here's the script in one block, for easier reading ::
+Here's the script in one block, for easier reading  
+
+.. code-block:: 
 
     import loottweaker.LootTweaker;
     import loottweaker.vanilla.loot.LootTable;

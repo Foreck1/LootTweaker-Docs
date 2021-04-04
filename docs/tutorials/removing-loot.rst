@@ -31,7 +31,9 @@ Go to the instance folder and open the subfolder called dumps. You'll find the l
 in here as json with the path ``dumps/loot_tables/<domain>/<path>.json``, so a loot table
 named ``awesomemod:chests/awesomechest`` would have the path ``dumps/loot_tables/awesomemod/chests/awesomechest.json``.
 In the case of the pig loot table, it is called ``minecraft:entities/pig``.
-Now open the loot table dump file, in the case of the pig, the JSON looks like this::
+Now open the loot table dump file, in the case of the pig, the JSON looks like this
+
+.. code-block::
 
     {
       "pools":
@@ -100,7 +102,9 @@ Finally, in your script import ``loottweaker.LootTweaker``,
 ``loottweaker.vanilla.loot.LootTable`` & ``loottweaker.vanilla.loot.LootPool``.
 Then combine ``LootTweaker.getTable()``, ``LootTable#getPool()`` & ``LootPool#removeEntry()``
 with the table, pool and entry names you found earlier.
-The resulting script for removing porkchops from the pig loot table looks like this::
+The resulting script for removing porkchops from the pig loot table looks like this
+
+.. code-block::
 
     //Import necessary types
     import loottweaker.LootTweaker;
@@ -120,7 +124,7 @@ The below script does exactly the same thing as the above script and is also val
 I recommend the above style when modifying a table or pool more than once, as it is more
 concise and readable.
 
-::
+.. code-block::
 
     import loottweaker.LootTweaker;
     import loottweaker.vanilla.loot.LootTable;

@@ -50,12 +50,16 @@ Crash Course in Local Variables
 ZenScript allows you to store a particular piece of data for later under a particular name.
 This is done using the **var** & **val** keywords,
 the difference is that **var** allows you to change the piece of data the name refers to, while **val** does not.
-They allow you to replace this::
+They allow you to replace this
+
+.. code-block::
 
     LootTweaker.getTable("foo").getPool("bar").removeEntry("baz");
     LootTweaker.getTable("foo").getPool("bar").removeEntry("qux");
 
-with this::
+with this
+
+.. code-block::
 
     val fooBar = LootTweaker.getTable("foo").getPool("bar");
     fooBar.removeEntry("baz");
@@ -67,7 +71,9 @@ More information about `local variables <http://crafttweaker.readthedocs.io/en/l
 
 Explanation of an Example Snippet
 ---------------------------------
-Let's have a look at an example snippet. You won't know the methods used yet, but that's not important.::
+Let's have a look at an example snippet. You won't know the methods used yet, but that's not important.
+
+.. code-block::
 
     //Get the cow loot table and store it for later use
     val cow = LootTweaker.getTable("minecraft:entities/cow");

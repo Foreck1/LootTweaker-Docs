@@ -12,7 +12,9 @@ or :doc:`conditions`/:doc:`functions`. Do not supply the conditions as part of a
 When using `DataMap`_ to supply conditions or functions,
 it is recommended that you surround the keys with double quotes("), as otherwise any keys which are zenscript keywords(e.g function) will cause issues.
 
-Recommended::
+Recommended
+
+.. code-block:: json
 
     [
        {
@@ -25,7 +27,9 @@ Recommended::
        }
     ]
 
-Not Recommended::
+Not Recommended
+
+.. code-block:: 
 
     [
        {

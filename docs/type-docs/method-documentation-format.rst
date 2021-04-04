@@ -9,16 +9,20 @@ Methods on the documentation pages follow the following format
 
 Specification
 -------------
-| ``<modifiers>? <return_type> <name>(<parameters>?)``
-| <modifiers> = static
-| <return_type> = <a ZenScript type> | void
-| <name> = <a valid ZenScript variable name>
-| <parameters> = <parameter>, ...
-| <parameter> = @Optional? <param_type> <param_name>
-| <param_type> = <a ZenScript type>
-| <param_name> = <a valid ZenScript variable name>
 
-Where an ? means the element is not included in all examples.
+.. code-block:: none
+
+    <modifiers>? <return_type> <name>(<parameters>?)
+    
+    <modifiers> = static
+    <return_type> = <a ZenScript type> | void
+    <name> = <a valid ZenScript variable name>
+    <parameters> = <parameter>, ...
+    <parameter> = @Optional? <param_type> <param_name>
+    <param_type> = <a ZenScript type>
+    <param_name> = <a valid ZenScript variable name>
+
+Where an ? means the element is not included in all cases.
 
 Explanation
 -----------
