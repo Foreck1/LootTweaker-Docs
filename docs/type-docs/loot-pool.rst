@@ -29,7 +29,7 @@ Recommended
 
 Not Recommended
 
-.. code-block:: 
+.. code-block:: none
 
     [
        {

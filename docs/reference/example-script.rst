@@ -1,7 +1,7 @@
 Example Script
 ==============
 
-.. code-block:: 
+.. code-block:: none 
 
     import loottweaker.LootTweaker;
     import loottweaker.vanilla.loot.LootTable;

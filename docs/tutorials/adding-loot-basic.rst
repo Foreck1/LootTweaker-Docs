@@ -44,7 +44,7 @@ The Complete Script
 -------------------
 Here's the script in one block, for easier reading  
 
-.. code-block:: 
+.. code-block:: none
 
     import loottweaker.LootTweaker;
     import loottweaker.vanilla.loot.LootTable;

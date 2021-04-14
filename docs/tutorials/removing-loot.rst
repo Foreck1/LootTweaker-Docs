@@ -33,7 +33,7 @@ named ``awesomemod:chests/awesomechest`` would have the path ``dumps/loot_tables
 In the case of the pig loot table, it is called ``minecraft:entities/pig``.
 Now open the loot table dump file, in the case of the pig, the JSON looks like this
 
-.. code-block::
+.. code-block:: none
 
     {
       "pools":
@@ -104,7 +104,7 @@ Then combine ``LootTweaker.getTable()``, ``LootTable#getPool()`` & ``LootPool#re
 with the table, pool and entry names you found earlier.
 The resulting script for removing porkchops from the pig loot table looks like this
 
-.. code-block::
+.. code-block:: none
 
     //Import necessary types
     import loottweaker.LootTweaker;
@@ -124,7 +124,7 @@ The below script does exactly the same thing as the above script and is also val
 I recommend the above style when modifying a table or pool more than once, as it is more
 concise and readable.
 
-.. code-block::
+.. code-block:: none
 
     import loottweaker.LootTweaker;
     import loottweaker.vanilla.loot.LootTable;
