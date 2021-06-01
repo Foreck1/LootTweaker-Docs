@@ -13,24 +13,24 @@ This is called deprecation.
 Below is a list of all the deprecated methods & classes. It explains why they were deprecated, what their replacement is, when they were deprecated,
 and when they will be removed. The most recent deprecations are at the top
 
-``LootTables``
---------------------------------------------------
-    :Reason: The ``LootTables`` class was replaced by ``loottweaker.LootTweaker`` to fix confusion between it and ``LootTable``.
+``loottweaker.vanilla.loot.LootTables``
+---------------------------------------
+    :Reason: The ``loottweaker.vanilla.loot.LootTables`` class was replaced by ``loottweaker.LootTweaker`` to fix confusion between it and ``loottweaker.vanilla.loot.LootTable``.
     :Replacement: ``loottweaker.LootTweaker``
     :Deprecated: 0.2.0
     :Removed: Future version
 
-``LootTables.getTable(String tableName)``
---------------------------------------------------
-    :Reason: The ``LootTables`` class was replaced by ``loottweaker.LootTweaker`` to fix confusion between it and ``LootTable``.
+``loottweaker.vanilla.loot.LootTables.getTable(String tableName)``
+------------------------------------------------------------------
+    :Reason: The ``loottweaker.vanilla.loot.LootTables`` class was replaced by ``loottweaker.LootTweaker`` to fix confusion between it and ``loottweaker.vanilla.loot.LootTable``.
     :Replacement: ``loottweaker.LootTweaker.getTable(String tableName)``
     :Deprecated: 0.2.0
     :Removed: Future version
 
-``LootTables.getTableUnchecked(String tableName)``
---------------------------------------------------
-    :Reason: Improvements in how ``LootTables.getTable(String tableName)`` validates table ids made this method obsolete. getTable can now get any table.
-    :Replacement: ``LootTables.getTable(String tableName)``
+``loottweaker.vanilla.loot.LootTables.getTableUnchecked(String tableName)``
+---------------------------------------------------------------------------
+    :Reason: Improvements in how ``loottweaker.vanilla.loot.LootTables.getTable(String tableName)`` validates table ids made this method obsolete. `getTable()` can now get any table.
+    :Replacement: ``loottweaker.vanilla.loot.LootTables.getTable(String tableName)``
     :Deprecated: 0.1.0
     :Removed: Future version
 
