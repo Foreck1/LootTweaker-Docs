@@ -28,6 +28,7 @@ static LootTable newTable(String tableName)
     :parameters:
         * tableName - the unique name of the table.
     :warns: if the table name implicitly or explicitly uses the minecraft namespace.
+     This warning can be disabled in LootTweaker's config.
     :errors: if a loot table with the specified name already exists.
     :returns: an empty table with the specified name.
 

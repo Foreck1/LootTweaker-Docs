@@ -11,7 +11,37 @@ This is called deprecation.
 .. note:: Deprecation warnings can be disabled in LootTweaker's config. The config option will reset if you change the installed version of LootTweaker.
 
 Below is a list of all the deprecated methods & classes. It explains why they were deprecated, what their replacement is, when they were deprecated,
-and when they will be removed. The most recent deprecations are at the top
+and when they were be removed. The most recent deprecations are at the top
+
+Methods with the Json or Helper suffix
+--------------------------------------
+    :Reason: As of 0.2.1 JSON format maps are automatically converted to 
+     LootConditions/LootFunctions as needed.
+    :Replacement: Method with the same name minus the suffix, e.g:
+
+        * addItemEntryHelper => addItemEntry
+        * addItemEntryJson => addItemEntry
+
+    :Deprecated: 0.2.1
+    :Removed: Future version
+
+``Functions.parse(DataMap json)``
+---------------------------------
+    :Reason: As of 0.2.1 JSON format maps are automatically converted to 
+     LootConditions/LootFunctions as needed.
+    :Replacement: Passing the DataMap directly, or casting to LootFunction 
+     using ``someMap as LootFunction``.
+    :Deprecated: 0.2.1
+    :Removed: Future version
+
+``Conditions.parse(DataMap json)``
+----------------------------------
+    :Reason: As of 0.2.1 JSON format maps are automatically converted to 
+     LootConditions/LootFunctions as needed.
+    :Replacement: Passing the DataMap directly, or casting to LootCondition 
+     using ``someMap as LootCondition``.
+    :Deprecated: 0.2.1
+    :Removed: Future version
 
 ``loottweaker.vanilla.loot.LootTables``
 ---------------------------------------

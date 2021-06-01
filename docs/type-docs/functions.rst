@@ -63,9 +63,23 @@ static LootFunction smelt()
 static LootFunction parse(DataMap json)
 +++++++++++++++++++++++++++++++++++++++
 
+    Deprecated. 0.2.1 introduced entry addition methods capable of automatically parsing Maps into LootConditions.
     Parses a `DataMap <https://docs.blamejared.com/1.12/en/Vanilla/Data/DataMap/>`_ into a ``LootFunction``.
 
     :parameters: 
         * json - an instance of ``DataMap`` representing a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
     :returns: ``json`` as a LootFunction.
     :errors: if ``json`` does not parse successfully.
+
+static LootFunction zenscript(loottweaker.CustomLootFunction zenFunction)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    Adapts ``zenFunction`` into a ``LootFunction``. 
+
+    :parameters: 
+        * zenFunction - a ZenScript function with arguments ``(IItemStack, IRandom, LootContext)`` and return type ``IItemStack``. 
+    :returns: a loot condition which passes if ``zenFunction`` returns true.
+    :see:
+        * `IItemStack <https://docs.blamejared.com/1.12/en/Vanilla/Items/IItemStack/>`_
+        * `IRandom <https://docs.blamejared.com/1.12/en/Vanilla/Utils/IRandom/>`_
+        * :doc:`LootContext <loot-context>`

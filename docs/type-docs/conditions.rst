@@ -40,9 +40,22 @@ static LootCondition killedByNonPlayer()
 static LootCondition parse(DataMap json)
 ++++++++++++++++++++++++++++++++++++++++
 
+    Deprecated. 0.2.1 introduced entry addition methods capable of automatically parsing Maps into LootConditions.
     Parses a `DataMap <https://docs.blamejared.com/1.12/en/Vanilla/Data/DataMap/>`_ into a ``LootCondition``.
 
     :parameters: 
         * json - an instance of ``DataMap`` representing a LootCondition in JSON form. It is recommended that the keys are enclosed in quotes to avoid conflicts between JSON key names and ZenScript keywords.
     :returns: ``json`` as a LootCondition
     :errors: if ``json`` does not parse successfully.
+
+static LootCondition zenscript(loottweaker.CustomLootCondition zenFunction)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    Adapts ``zenFunction`` into a ``LootCondition``. 
+
+    :parameters: 
+        * zenFunction - a ZenScript function with arguments ``(IRandom, LootContext)`` and return type ``boolean``. 
+    :returns: a loot condition which passes if ``zenFunction`` returns true.
+    :see:
+        * `IRandom <https://docs.blamejared.com/1.12/en/Vanilla/Utils/IRandom/>`_
+        * :doc:`LootContext <loot-context>`

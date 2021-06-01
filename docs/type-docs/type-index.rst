@@ -8,3 +8,5 @@ ZenScript Types
     loot-pool
     conditions
     functions
+    loot-function
+    loot-context
