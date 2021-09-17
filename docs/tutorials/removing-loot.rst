@@ -17,7 +17,7 @@ a) If the table is for an entity, spawn the entity ingame. Now look at the entit
    run the command ``/ct loottables target``. Not all entities have loot tables. The Wither
    is a vanilla example (`More Loot Tables <https://minecraft.curseforge.com/projects/more-loot-tables>`_ adds one).
    If a modded entity does not have a loot table, you will have to ask the author to add one.
-   Until they do you can use `CraftTweaker's Drop Functions <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Entities/IEntityDefinition/#drops>`_.
+   Until they do you can use `CraftTweaker's Drop Functions <https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Entities/IEntityDefinition/#drops>`_. Alternatively, you can    use `In Control! <https://www.curseforge.com/minecraft/mc-mods/in-control>`_ to add a completely new loot table to a mob, which can then be edited with Loot Tweaker.
 b) If it's for a loot chest, find a loot container that you think has the right loot table
    and **do not** open it. Now look at the chest and run the command ``/ct loottables target``.
 c) If it's neither of the above, check the the mod's documentation, or for vanilla,
